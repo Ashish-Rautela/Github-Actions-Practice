@@ -5,6 +5,7 @@ jobs:
   Testing:
     runs-on: Ubuntu-latest
     steps:
-      - name: printing files
+      - name: checkout to repo
         uses: actions/checkout@v4
+      - name: print files 
         run: ls
