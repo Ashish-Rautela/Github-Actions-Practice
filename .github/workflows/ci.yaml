@@ -2,8 +2,12 @@ name: Testing
 on:
   push:
 jobs:
-  something:
+  Testing:
     runs-on: Ubuntu-latest
     steps:
-      - name: printing
-        run: echo "Hlo world"
+      - name: printing OS
+        run: uname
+      - name: printing Directory
+        run: pwd
+      - name: printing files
+        run: ls
