@@ -5,9 +5,6 @@ jobs:
   Testing:
     runs-on: Ubuntu-latest
     steps:
-      - name: printing OS
-        run: uname
-      - name: printing Directory
-        run: pwd
       - name: printing files
+        uses: actions/checkout@v4
         run: ls
